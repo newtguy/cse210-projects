@@ -1,0 +1,31 @@
+Class: Video
+
+attributes: string title, string author, int videoLength, List<Comment> comments
+
+constructor will set title, author, videoLength
+getters will be made for title, author and videoLength.
+
+void AddComment(){}
+void DisplayComments{}
+void DisplayAll(){}
+
+Class: Comment
+
+attributes: string username, string message
+
+constructor sets username and message
+getters for username, message
+
+void DisplayComment(){}
+
+Main: 
+Creates instances for 3-4 videos & sets values
+- Add List of 3-4 comments 
+- Put videos in List
+
+Iterate through List<Video>
+- Display title, author, length, number of comments
+- List all comments for that video
+
+Main => Comment
+Main => Video => Comment
