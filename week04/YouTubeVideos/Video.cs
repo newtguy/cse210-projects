@@ -53,6 +53,8 @@ public class Video
         TimeSpan time = TimeSpan.FromSeconds(GetLength());
         string formatLength = time.ToString(@"hh\:mm\:ss");
         Console.WriteLine($"Length: {formatLength}");
+
+        Console.WriteLine($"Comments: {this._comments.Count()}\n");
         DisplayComments();
     }
 }
