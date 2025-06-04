@@ -1,0 +1,34 @@
+Class: Order
+attributes: List<Product> products, Customer customers
+constructor: products = new List<Product>, customers = new Customer()
+float CalculateTotalPrice()
+string GetPackingLabel()
+string GetShippingLabel()
+string DisplayEntireOrder()
+
+Class: Product
+attributes: string name, string productID, float price, int quantity
+constructor sets name, ID, price, quantity
+string GetName()
+string GetProductID()
+float GetPrice()
+int GetQuantity()
+float CalculateProductPrice()
+void DisplayProductInfo()
+
+Class: Customer
+attributes: string name, Address address
+constructor sets name, address
+string GetName()
+Address GetCustomerAddress()
+bool LivesInUSA()
+void DisplayCustomerInfo()
+
+Class: Address
+attributes: string address, string city, string state, string country
+string GetAddress()
+string GetCity()
+string GetState()
+string GetCountry()
+bool IsUSA()
+string GetAddressString()
