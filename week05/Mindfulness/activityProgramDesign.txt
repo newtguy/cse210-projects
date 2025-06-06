@@ -1,0 +1,82 @@
+public class Activity
+{
+    private string _activityName;
+    private int _activityTimeSpan;
+    private int _completionCounter;
+
+    //Ctor
+    public Activity(string name)
+
+    private string GetActivityName()
+    public int GetCompletionCounter()
+    
+    public string GetWelcomeMessage()
+        - returns "Welcome to the __ Activity."
+    public string GetEndingMessage()
+        - returns "You have completed __ seconds of the __ Activity."
+    public void IncrementCompletionCounter()
+
+    public void PlayAnimationLoop()
+    public void FiveSecondTimer() 
+    public void CustomTimer(int seconds)
+}
+
+public class BreathingActivity : Activity
+{
+    private const string BREATHING_NAME;
+    private const string BREATHING_DESCRIPTION;
+
+    //Ctor
+    public BreathingActivity(): base (BREATHING_NAME)
+
+    public void RunBreathingActivity()
+}
+
+public class ReflectionActivity : Activity 
+{   
+    private const string REFLECTION_NAME;
+    private const string REFLECTION_DESCRIPTION;
+    private List<string> _initialPrompts;
+    private List<string> _additionalQuestions; 
+
+    //Ctor
+    public ReflectionActivity() : base (REFLECTION_NAME)
+        ask user for time
+    
+    private string GetInitialPrompt()
+    private string GetQuestion()
+    private void RunReflectionActivity()
+}
+
+public class ListingActivity : Activity 
+{
+    private const string LISTING_NAME;
+    private const string LISTING_DESCRIPTION;
+    private List<string> prompts;
+    private List<int> usedPromptIndexes; // store 1 or 0 based on used prompts
+
+    //Ctor
+    public ListingActivity() : base (LISTING_NAME)
+        
+
+    private string GetListingDescription()
+    private string GetPrompt()
+    private bool IsUsedPrompt()
+    public void RunListingActivity()
+}
+
+main {
+    prompt user for choice
+
+    menu options
+        1. Start Breathing Activity
+        2. Start Reflecting Activity
+        3. Start Listing Activity
+        4. Quit
+}
+
+Program Layout:
+
+main => Listing Activity     \
+main => Breathing Activity   - Activity
+main => Reflection Activity  /
