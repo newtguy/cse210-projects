@@ -2,4 +2,9 @@
 
 Nathan Shelley | CSE210 | 2025
 
-This repository contains the starter code for many different projects. They are arranged folders by week. There is also an an empty sandbox project that can be used to play around with any concept you would like.
+This repository contains the coursework for CSE210 completed by Nathan Shelley. They are arranged folders by week.
+
+Week 02 - Abstraction
+Week 03 - Encapsulation
+Week 05 - Inheritance
+Week 06 - Polymorphism

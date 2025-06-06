@@ -76,7 +76,7 @@ public class ListingActivity : Activity
             SetCurrDate();
         } while (GetCurrDateObject() < GetFutureObject());
 
-        Console.WriteLine($"You listed {activityCounter} items!");
+        Console.WriteLine($"You listed {activityCounter} items!\n");
         PlayEndingMessage();
     }
 
