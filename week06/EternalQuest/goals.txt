@@ -1,1 +1,4 @@
-Sleep,Sleeeeeeep,10,True
+35
+Eternal,This is an Eternal Goal,15
+Checklist,This is a Checklist Goal,5,0,3
+Simple,This is a Simple Goal,10,False
